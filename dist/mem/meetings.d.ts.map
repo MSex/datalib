@@ -1,0 +1,1 @@
+{"version":3,"file":"meetings.d.ts","sourceRoot":"","sources":["../../src/mem/meetings.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,MAAM,CAAC;AAEvC,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAe,MAAM,eAAe,CAAC;AAE/D,qBAAa,YAAa,YAAW,QAAQ;IAC3C,OAAO,CAAC,QAAQ,CAId;IACF,OAAO,CAAC,KAAK,CAAiD;;IAIvD,IAAI;IAIJ,GAAG,CAAC,EAAE,EAAE,MAAM;CAMtB"}

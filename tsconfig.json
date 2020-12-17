@@ -1,11 +1,42 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "declaration": true,
-      "outDir": "./lib",
-      "strict": true
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "**/__tests__/*"]
+  "include": ["src/*.ts"],
+  "compilerOptions": {
+    // STRICT CHECKS
+    "strict": true,
+
+    // LINTER CHECKS
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // PROJECT OPTIONS
+    "target": "es2015",
+    "module": "es2020",
+
+    "outDir": "./dist",
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "removeComments": false,
+
+
+
+    // MODULE RESOLUTION
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    // EXPERIMENTAL
+    // ADVANCED
+    "forceConsistentCasingInFileNames": true,
+
+  },
 }
