@@ -1,5 +1,5 @@
 import { BehaviorSubject } from "rxjs";
-import { User, Users } from "data/users";
+import { User, Users } from "../data/users";
 export declare class UsersImpl implements Users {
     private _storage;
     private _list;

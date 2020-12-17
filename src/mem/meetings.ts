@@ -1,6 +1,6 @@
 import { BehaviorSubject } from "rxjs";
 import { mergeMap, filter } from "rxjs/operators";
-import { Meeting, Meetings, MeetingImpl } from "data/meetings";
+import { Meeting, Meetings, MeetingImpl } from "../data/meetings";
 
 export class MeetingsImpl implements Meetings {
   private _storage = [

@@ -1,5 +1,5 @@
 import { Observable } from "rxjs";
-import { UserId } from "data/users";
+import { UserId } from "../data/users";
 export declare type MeetingId = string;
 export interface Meeting {
     id: MeetingId;

@@ -1,5 +1,5 @@
 import { BehaviorSubject } from "rxjs";
-import { Meeting, Meetings } from "data/meetings";
+import { Meeting, Meetings } from "../data/meetings";
 export declare class MeetingsImpl implements Meetings {
     private _storage;
     private _list;
