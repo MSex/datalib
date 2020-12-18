@@ -1,6 +1,6 @@
 {
   "name": "datalib",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Test NPM Package",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "mv ./dist/* ./ && rmdir ./dist"
   },
   "repository": {
     "type": "git",
