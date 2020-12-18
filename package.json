@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "postinstall": "ls | echo"
+    "postinstall": "ls | echo && touch a.txt"
   },
   "repository": {
     "type": "git",
