@@ -15,7 +15,7 @@
     "target": "es2015",
     "module": "es2020",
 
-    "outDir": "./dist",
+    "outDir": "./lib",
 
     "declaration": true,
     "declarationMap": true,

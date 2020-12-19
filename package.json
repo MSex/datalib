@@ -1,14 +1,14 @@
 {
   "name": "datalib",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Test NPM Package",
+  "directories":{"lib":"./lib"},
   "files": [
-    "/dist/**/*"
+    "/lib"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "postinstall": "echo $npm_lifecycle_event >> ~/a.txt"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
