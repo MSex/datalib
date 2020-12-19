@@ -2,7 +2,9 @@
   "name": "datalib",
   "version": "0.7.0",
   "description": "Test NPM Package",
-  "directories":{"lib":"./lib"},
+  "directories": {
+    "lib": "./lib"
+  },
   "files": [
     "/lib"
   ],
