@@ -11,9 +11,9 @@ export interface Meeting {
 }
 
 export interface Meetings {
-  get(id: MeetingId): Observable<Meeting>;
-
   list(): Observable<Meeting[]>;
+  stream(): Observable<Meeting>;
+  get(id: MeetingId): Observable<Meeting>;
 }
 
 export abstract class AMeeting implements Meeting {
@@ -25,17 +25,12 @@ export abstract class AMeeting implements Meeting {
 
 export abstract class AMeetings {
   abstract get(id: MeetingId): Observable<Meeting>;
-
+  abstract stream(): Observable<Meeting>;
   abstract list(): Observable<Meeting[]>;
 }
 
 export class MeetingImpl extends AMeeting implements Meeting {
-  constructor(
-    public id: MeetingId,
-    public description: string,
-    public password: string,
-    public speaker: UserId
-  ) {
+  constructor(public id: MeetingId, public description: string, public password: string, public speaker: UserId) {
     super();
   }
 }

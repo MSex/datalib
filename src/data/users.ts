@@ -2,21 +2,9 @@ import { Observable } from "rxjs";
 
 export type UserId = string;
 
-export interface Plural<T> {
-  get(id: UserId): Observable<T>;
-
-  list(): Observable<T[]>;
-}
-
 export interface User {
   id: UserId;
   name: string;
-}
-
-export interface Users extends Plural<User> {
-  get(id: UserId): Observable<User>;
-
-  list(): Observable<User[]>;
 }
 
 export abstract class AUser {
@@ -24,10 +12,22 @@ export abstract class AUser {
   abstract name: string;
 }
 
-export abstract class AUsers {
-  abstract get(id: UserId): Observable<User>;
+export interface Users {
+  create(user: User): Observable<UserId>;
+  read(userId: UserId): Observable<User>;
+  list(): Observable<User[]>;
+  stream(): Observable<User>;
+  update(userId: UserId, user: User): Observable<void>;
+  delete(userId: UserId): Observable<void>;
+}
 
+export abstract class AUsers {
+  abstract create(user: User): Observable<UserId>;
+  abstract read(userId: UserId): Observable<User>;
   abstract list(): Observable<User[]>;
+  abstract stream(): Observable<User>;
+  abstract update(userId: UserId, user: User): Observable<void>;
+  abstract delete(userId: UserId): Observable<void>;
 }
 
 export class UserImpl extends AUser implements User {

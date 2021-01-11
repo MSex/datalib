@@ -1,10 +1,9 @@
-import { BehaviorSubject } from "rxjs";
 import { Meeting, Meetings } from "../data/meetings";
+import { Observable } from "rxjs";
 export declare class MeetingsImpl implements Meetings {
     private _storage;
     private _list;
-    constructor();
-    list(): BehaviorSubject<Meeting[]>;
-    get(id: string): import("rxjs").Observable<Meeting>;
+    list(): Observable<Meeting[]>;
+    get(id: string): Observable<Meeting>;
 }
 //# sourceMappingURL=meetings.d.ts.map
