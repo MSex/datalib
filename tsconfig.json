@@ -1,9 +1,10 @@
 {
-  "include": ["src"],
+  "include": ["src", "helpers"],
   "exclude": ["**/__tests__/*"],
   "compilerOptions": {
     // STRICT CHECKS
     "strict": true,
+    "strictNullChecks": true,
 
     // LINTER CHECKS
     "noImplicitReturns": true,
@@ -35,6 +36,5 @@
     // EXPERIMENTAL
     // ADVANCED
     "forceConsistentCasingInFileNames": true,
-
   },
 }

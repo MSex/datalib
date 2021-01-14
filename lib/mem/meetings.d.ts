@@ -1,9 +1,9 @@
-import { Meeting, Meetings } from "../data/meetings";
 import { Observable } from "rxjs";
+import { Meeting, Meetings } from "../data/meetings";
 export declare class MeetingsImpl implements Meetings {
     private _storage;
-    private _list;
     list(): Observable<Meeting[]>;
+    stream(): Observable<Meeting>;
     get(id: string): Observable<Meeting>;
 }
 //# sourceMappingURL=meetings.d.ts.map

@@ -8,8 +8,9 @@ export interface Meeting {
     speaker: UserId;
 }
 export interface Meetings {
-    get(id: MeetingId): Observable<Meeting>;
     list(): Observable<Meeting[]>;
+    stream(): Observable<Meeting>;
+    get(id: MeetingId): Observable<Meeting>;
 }
 export declare abstract class AMeeting implements Meeting {
     abstract id: MeetingId;
@@ -19,6 +20,7 @@ export declare abstract class AMeeting implements Meeting {
 }
 export declare abstract class AMeetings {
     abstract get(id: MeetingId): Observable<Meeting>;
+    abstract stream(): Observable<Meeting>;
     abstract list(): Observable<Meeting[]>;
 }
 export declare class MeetingImpl extends AMeeting implements Meeting {
