@@ -1,3 +1,3 @@
-export * as Users from "./users";
-export * as Meetings from "./meetings";
+export * from "./users";
+export * from "./meetings";
 //# sourceMappingURL=main.d.ts.map

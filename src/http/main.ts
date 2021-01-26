@@ -1,2 +1,2 @@
 export * from "./http";
-export * as Users from "./users";
+export * from "./users";

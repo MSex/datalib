@@ -1,6 +1,6 @@
 {
   "include": ["src", "helpers"],
-  "exclude": ["**/__tests__/*"],
+  "exclude": ["**/*.spec.ts"],
   "compilerOptions": {
     // STRICT CHECKS
     "strict": true,
