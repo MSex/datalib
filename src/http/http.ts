@@ -7,10 +7,6 @@ export interface RequestFactory {
   build(path: string, init?: RequestInit): Request;
 }
 
-export abstract class ARequestFactory {
-  abstract build(path: string, init?: RequestInit): Request;
-}
-
 export class RequestFactoryImpl implements RequestFactory {
   build(path: string, init?: RequestInit): Request {
     return new Request(path, init);
