@@ -11,9 +11,6 @@ import {
 } from "../data/users";
 import { DataError } from "../data/errors";
 
-const copyUser = (user: User): User =>
-  new UserImpl(user.id, user.name, "a", "b");
-
 export class UsersImpl implements Users {
   private _max = 3;
 
@@ -72,3 +69,8 @@ export class UsersImpl implements Users {
     );
   }
 }
+
+// PRIVATE 
+const copyUser = (user: User): User =>
+  new UserImpl(user.id, user.name, "a", "b");
+

@@ -1,5 +1,4 @@
-import { UsersValidation, NewUser } from "./users";
-import { UsersValidationImpl } from "./users.validation";
+import { UsersValidation, NewUser, UsersValidationImpl } from "./users";
 import { expectOnlyCompletion, expectOnlyError } from "../util/util";
 
 describe("Users validation", () => {

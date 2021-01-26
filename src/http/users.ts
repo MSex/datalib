@@ -3,10 +3,6 @@ import { map, mergeMap, toArray } from "rxjs/operators";
 import { User, Users, UsersValidation, NewUser, UserId } from "../data/users";
 import { Fetcher, RequestFactory } from "./http";
 
-const mapToUser = map((obj): User => obj as User);
-const mapToId = map((obj): UserId => (obj as { id: string }).id as UserId);
-const mapToEmpty = mergeMap((): Observable<never> => EMPTY);
-
 export class UsersImpl implements Users {
   constructor(
     private validation: UsersValidation,
@@ -98,3 +94,9 @@ export class UsersImpl implements Users {
     return concat(validate, execute) as Observable<never>;
   }
 }
+
+// PRIVATE
+const mapToUser = map((obj): User => obj as User);
+const mapToId = map((obj): UserId => (obj as { id: string }).id as UserId);
+const mapToEmpty = mergeMap((): Observable<never> => EMPTY);
+
