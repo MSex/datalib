@@ -1,6 +1,6 @@
 {
   "name": "datalib",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Test NPM Package",
   "directories": {
     "lib": "./lib"
@@ -27,15 +27,15 @@
   },
   "homepage": "https://github.com/MSex/datalib#readme",
   "devDependencies": {
-    "@types/jasmine": "^3.6.2",
+    "@types/jasmine": "^3.6.3",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-jsdoc": "^31.0.3",
-    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-prettier": "^3.3.1",
-    "jasmine": "^3.6.3",
+    "jasmine": "^3.6.4",
     "jasmine-spec-reporter": "^6.0.0",
     "jasmine-test-helpers": "^1.2.3",
     "npm-check-updates": "^10.2.5",
